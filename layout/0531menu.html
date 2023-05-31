@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS기초-menu만들기</title>
+        <style>
+            ul{
+                list-style: none;
+            }
+            li{
+                float: left;
+                width: 100px;
+                text-align: center;
+                padding: 10px 0;
+                background-color: gray;
+            }
+            li:hover{
+                cursor: pointer;
+                background-color: #222;
+                color: #fff;
+            }
+            ul::after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>메뉴1</li>
+                <li>메뉴2</li>
+                <li>메뉴3</li>
+                <li>메뉴4</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim a iure, id facere nemo praesentium qui ipsum inventore dolor? Blanditiis accusantium maiores adipisci, ducimus nesciunt dolores commodi accusamus deserunt.</p>
+        </nav>
+    </body>
+</html>

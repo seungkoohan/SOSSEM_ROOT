@@ -4,14 +4,14 @@
     margin: 0;
     padding: 0;
 }
-#header{
+header{
     background-color: orange;
     height: 10vh;
 }
-#main>div{
+main>section{
     float: left;
     width: 33.333333%;
-    height: 80vh;
+    height: 60vh;
 }
 #left{
     background-color: green;    
@@ -22,7 +22,7 @@
 #right{
     background-color: blue;
 }
-#footer{
+footer{
     background-color: gray;
     clear: both;
     height: 10vh;
