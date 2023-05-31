@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+*{ 
+    margin: 0; 
+    padding: 0; 
+}
+
+#wrapper{
+    width: 800px;
+    margin: 0 auto;
+}
+
+/**** header content ****/
+header{
+    height: 400px;
+    background-image: url(../image/cafe-1.jpg);
+    background-size: cover;
+}
+nav{
+    background-color: #222;
+    text-align: center;
+    padding: 20px;
+}
+nav > a{
+    text-decoration: none;
+    color: #fff;
+    /* display: inline-block; */
+    padding: 20px;
+}
+nav > a:hover{
+    background-color: #666;
+}
+
+section{
+    padding: 30px;
+}
+
+section::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+section > div{
+    float: left;
+    margin: 20px;
+}
+section > h1{
+    margin: 10px 0;
+}
+section > div.img{
+    width: 300px;
+    height: 200px;    
+}
+section#info > div.img{
+    background-image: url(../image/cafe-2.jpg);
+    background-size: cover;
+}
