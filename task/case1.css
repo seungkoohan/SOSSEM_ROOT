@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+*{ margin: 0; padding: 0; }
+#wrapper{
+    width: 800px;
+    margin: 50px auto;
+}
+header{
+    height: 400px;
+    background-image: url(../image/apples.jpg);
+    background-size: cover;
+    position: relative;
+}
+header > .bg{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+header > .bg > h1{
+    color: #fff;
+    margin: 20px 50px;
+}
+header > .bg > p{
+    color: rgb(205, 134, 2);
+    margin: 15px 30px;
+    font-weight: bolder;
+}
+.title{
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+}
+.detail{
+    border: 1px solid #777;
+    text-align: center;
+    padding: 30px 0;
+}
+.detail > h2{
+    color: #f00;
+    font-size: 14px;
+    margin: 10px 0;
+}
+.detail > p{
+    font-weight: bolder;
+    margin: 10px 0;
+}
+.detail span{
+    color: #00f;
+}
