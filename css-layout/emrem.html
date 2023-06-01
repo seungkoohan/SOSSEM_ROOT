@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>em/rem</title>
+        <style>
+            html{
+                font-size: 62.5%;  /* 16* 62.5% = 10px */
+            }
+            body {
+                font-size: 14px;
+            }
+            .container{
+                font-size: 1.5em;
+            }
+            h1 {
+                width: 10rem;
+                font-size: 20vw; /* 16*2 */
+            }
+            p {
+                font-size: 2rem; /* 16*2 */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>TITLE</h1>
+            <p>lorem ipsum</p>
+        </div>
+    </body>
+</html>

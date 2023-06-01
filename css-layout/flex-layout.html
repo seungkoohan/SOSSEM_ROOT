@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout - Flex</title>
+    <style>
+        div.item{
+            width: 200px;
+            /* height: 100px; */
+        }
+        .container{
+            /* height: 500px; */
+            display: flex;
+            /* flex-direction: column-reverse; */
+            /* flex-wrap: wrap; */
+            /* justify-content: center; */
+            /* align-content: space-around; */
+            align-items: stretch;            
+        }
+        div.item:nth-of-type(1){ 
+            height: 100px; 
+            order: 1;
+        }
+        div.item:nth-of-type(2){ 
+            height: 50px; 
+            order: 10;
+        }
+        div.item:nth-of-type(3){ 
+            height: 150px; }
+        div.item:nth-of-type(4){
+            height: 100px; 
+            order: -1;
+        }
+        div.item:nth-of-type(5){ height: 50px; }
+    </style>
+</head>
+<body>
+    <div class="container" style="background-color: gray;">
+        <div class="item" style="background-color: orange;">item1</div>
+        <div class="item" style="background-color: green;">item2</div>
+        <div class="item" style="background-color: skyblue;">item3</div>
+        <div class="item" style="background-color: pink;">item4</div>
+        <div class="item" style="background-color: purple;">item5</div>
+    </div>
+</body>
+</html>
