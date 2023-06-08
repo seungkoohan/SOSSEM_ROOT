@@ -29,10 +29,34 @@ main > div{
 }
 .card > .img{
     height: 55%;
-    margin-bottom: 5PX;
-    background-image: url(../image/image-01.png);
+    margin-bottom: 5PX;    
     background-size: cover;
     background-position: center;
+}
+/*** img setting ***/
+.card:nth-of-type(1) > .img{
+    background-image: url(../image/image-01.png);
+}
+.card:nth-of-type(2) > .img{
+    background-image: url(../image/image-02.png);
+}
+.card:nth-of-type(3) > .img{
+    background-image: url(../image/image-03.png);
+}
+.card:nth-of-type(4) > .img{
+    background-image: url(../image/image-04.png);
+}
+.card:nth-of-type(5) > .img{
+    background-image: url(../image/image-05.png);
+}
+.card:nth-of-type(6) > .img{
+    background-image: url(../image/image-06.png);
+}
+.card:nth-of-type(7) > .img{
+    background-image: url(../image/image-07.png);
+}
+.card:nth-of-type(8) > .img{
+    background-image: url(../image/image-01.png);
 }
 .card > .detail {
     height: 30%;
