@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+*{ margin: 0; padding: 0;}
+body{ height: 100vh;}
+
+/*** 전체 layout ***/
+main{
+    width: 80%;
+    height: 600px;
+    margin: 50px auto;
+    /*** grid layouy ***/
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+}
+main > div{
+    border: 1px solid #888;
+}
+
+/*** card layout ***/
+.card{
+    padding: 10px;
+}
+.card > div{
+    box-sizing: border-box;
+    padding: 7px;
+    border: 1px solid #888;
+}
+.card > .img{
+    height: 55%;
+    margin-bottom: 5PX;
+    background-image: url(../image/image-01.png);
+    background-size: cover;
+    background-position: center;
+}
+.card > .detail {
+    height: 30%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    align-content: center;
+    gap: 5px;
+}
+.card > .detail >p:nth-of-type(1){
+    grid-column: 1 / span 2;
+    font-weight: bolder;
+}
+.card > .detail > p:nth-of-type(2){
+    text-align: right;
+    font-size: 80%;
+}
+.card > .detail > p:nth-of-type(3){
+    grid-column: 1 / span 3;
+    font-weight: bolder;
+}
+.card > .detail > p.btn{
+    border: 1px solid #00f;
+    text-align: center;
+}
+.card > .time {
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+}
