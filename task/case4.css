@@ -8,7 +8,7 @@
 }
 /*** common class style ***/
 .btnStyle{   
-    width: 50%;
+    width: 150px;
     margin: 0 auto;
     padding: var(--main-padding);
     color: #fff;
