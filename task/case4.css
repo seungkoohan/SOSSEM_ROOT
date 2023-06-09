@@ -80,8 +80,35 @@ div.title p:nth-of-type(2){
     font-size: 25px;
     margin: 20px 0;
 }
-
-
 /*** <main> ***/
+.secA{
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.secA > div{
+    margin: 30px;
+}
+.secA > .card > .icon{
+    width: 100px;
+    margin: 30px auto;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #888;
+    color: #fff;
+}
+.secA > .card > .icon > span{
+    font-size: 60px;
+    line-height: 100px;
+}
+.secA > .card > p{
+    margin: 30px 0;
+}
+.secA > .card > a{
+    font-weight: bolder;
+    color: var(--main-color);
+}
 
 /*** <footer> ***/
