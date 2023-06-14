@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+body{
+    /* 원근감 : 800px ~ 1000px */    
+    perspective: 1000px;  
+}
+div{
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border: 1px solid #000;
+    transition: 0.5s;
+}
+.box1:hover{
+    transform: translate(50px,50px);
+    /* transform: translateX(50px); */
+    /* transform: translateY(50px); */
+    /* position: relative;
+    top: 50px;
+    left: 50px; */
+}
+.box2:hover{
+    /* transform: scale(0.6); */
+    /* transform: scaleY(0.6); */
+    transform: scaleX(0.6);
+}
+.box3:hover{
+    /* transform: rotate(-45deg); */
+    transform: rotateX(45deg);
+    /* transform: rotateY(-45deg); */
+    /* transform: rotateZ(-45deg); */
+}
+.box4:hover{
+    /* transform: skew(30deg, 20deg); */
+    /* transform: skewX(30deg); */
+    transform: skewY(30deg);
+}
