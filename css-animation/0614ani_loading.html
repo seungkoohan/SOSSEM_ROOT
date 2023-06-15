@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 애니메이션 로딩바</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrapper div{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 20px;
+            animation-name: loading;
+            animation-duration: 1s;
+            /* animation-direction: alternate; */
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .wrapper div:nth-of-type(1){
+            background-color: tomato;
+        }
+        .wrapper div:nth-of-type(2){
+            background-color: yellowgreen;
+            animation-delay: 0.2s;
+        }
+        .wrapper div:nth-of-type(3){
+            background-color: skyblue;
+            animation-delay: 0.4s;
+        }
+
+        @keyframes loading{
+            0%,100%{
+                transform: scale(0.4);
+            }
+            50%{
+                transform: scale(1.4);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

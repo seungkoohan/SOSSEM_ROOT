@@ -8,7 +8,7 @@
 }
 /*** common class style ***/
 .btnStyle{   
-    width: 150px;
+    width: 50%;
     margin: 0 auto;
     padding: var(--main-padding);
     color: #fff;
@@ -21,7 +21,10 @@
 
 /*** reset.css ***/
 *{ margin: 0; padding: 0;}
-a{text-decoration: none;}
+a{
+    text-decoration: none;
+    color: inherit;
+}
 ul{ list-style: none;}
 body{ 
     height: 100vh;
@@ -111,4 +114,71 @@ div.title p:nth-of-type(2){
     color: var(--main-color);
 }
 
+.wrap{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.wrap > img{
+    width: 50%;
+}
+.wrap > div{
+    margin: 20px;
+    padding: 30px;
+}
+.wrap > div > h3{
+    font-size: 24px;
+}
+.wrap > div > p:nth-of-type(1){
+    font-size: 20px;
+    margin: 10px 0;
+}
+.secB{
+    background-color: var(--main-color);
+    color: #fff;
+}
+.secC{
+    padding: 50px;
+}
+.secB .btnStyle , .secC .btnStyle{
+    margin: 50px 0;
+}
+
 /*** <footer> ***/
+footer{
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    padding: 30px;
+}
+footer > .f-logo{
+    width: 20%;
+}
+footer > .f-logo > p{
+    margin: 10px 0;
+}
+footer > .f-logo > .f-icon > span{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bolder;
+    line-height: 50px;
+    margin: 10px 5px;
+}
+footer > .f-menu{
+    width: 40%;
+    display: flex;
+}
+footer > .f-menu > div{
+    flex: 1;margin: 0 20px;
+}
+footer > .f-menu h3{
+    border-bottom: 2px solid #fff;
+}
+footer > .f-menu li{
+    padding: 10px 0;
+}

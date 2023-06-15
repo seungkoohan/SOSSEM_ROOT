@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transition: 1s 2s;
+    /*
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.1,1.58,1,.1);
+    transition-delay: 2s;
+    */
+}
+.box1:hover{
+    width: 500px;
+    background-color: blue;
+}
