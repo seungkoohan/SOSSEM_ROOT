@@ -31,6 +31,8 @@ body{
 .item > .line > .progress{
     height: 10px;
     background-color: yellow;
+    animation-name: skill-progress;
+    animation-duration: 1s;
 }
 .item:nth-of-type(1) > .line > .progress{
     width: 90%;
@@ -46,4 +48,8 @@ body{
 }
 .item:nth-of-type(5) > .line > .progress{
     width: 82%;
+}
+
+@keyframes skill-progress {
+    0%{ width: 0;}
 }
