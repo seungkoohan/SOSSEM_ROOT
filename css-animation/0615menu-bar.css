@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+*{ margin: 0; padding: 0;}
+body{
+    height: 100vh;    
+}
+a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #222;
+    display: block;
+    text-align: center;
+}
+/******************************/
+.wrapper{
+    width: 200px;
+    margin: 10px auto;
+}
+
+/*** menu1 ***/
+.menu1 > .line{
+    height: 2px;
+    /* width: 100%; */
+    width: 0;
+    background-color: tomato;
+    transition: 1s;
+}
+.menu1:hover .line{
+    width: 100%;
+}
+/* .menu1>a:hover + .line{
+    width: 100%;
+} */
+
+/*** menu2 ***/
+.menu2{
+    position: relative;
+}
+.menu2 > .line{
+    height: 2px;
+    width: 0;
+    background-color: skyblue;
+    transition: 1s;
+    position: absolute;
+    right: 0;
+}
+.menu2:hover .line{
+    width: 100%;
+}
+/*** menu3 ***/
+.menu3{
+    position: relative;
+}
+.menu3 > .line{
+    width: 5px;
+    /* height: 5px;
+    background-color: yellowgreen; */
+    border: 3px solid yellowgreen;
+    transition: 1s;
+    position: absolute;
+    /* right: 0; */
+    left: 0;
+}
+.menu3:hover .line{
+    /* right: 100%; */
+    left: 100%;
+}
+
+/*** menu4 ***/
+.menu4{
+    position: relative;
+}
+.menu4 > .line{
+    width: 100%;
+    height: 2px;
+    background-color: palevioletred;
+    position: absolute;
+    left: 0;    
+    transition: 1s;
+}
+.menu4:hover .line{
+    left: 50%;
+    width: 0;
+}
+/******************/
+/* .menu5:before{
+    content: "<<<<<<";
+}
+.menu5:after{
+    content: ">>>>>";
+} */
+.menu5:after{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: tomato;
+}
